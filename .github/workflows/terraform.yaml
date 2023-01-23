@@ -6,11 +6,16 @@ on:
    - main
    paths:
    - pipelines/terraform/**
- pull_request:
+ pull_request_target:
    branches:
    - main
    paths:
    - pipelines/terraform/**
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
  
 env:
  # verbosity setting for Terraform logs
