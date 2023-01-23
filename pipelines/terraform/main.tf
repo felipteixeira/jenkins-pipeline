@@ -20,3 +20,5 @@ resource "aws_iam_role_policy_attachment" "AmazonSSMManagedInstanceCore" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
   role       = module.ec2_instance.iam_role_name
 }
+
+
